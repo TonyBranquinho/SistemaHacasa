@@ -1,76 +1,70 @@
 :root {
     font-size: 62.5%; /* torna 1rem = 10px */
+    /* Cores */
+    --fundo:#3A5311;
+    --botao:#E98D2F
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    height: 100vh;
-    background: linear-gradient(135deg,black);
-    font-family: Arial, sans-serif;
-    display: flex;            
-    justify-content: center;  
-    align-items: center;      
+* {
+  margin: 0;  
 }
 
 /* ===== FORMULÁRIO LOGIN===== */
-.formulario-login {
-  background: white;
-  padding: 4rem;
-  border-radius: 16px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 1.8);
-  width: 100%;
-  max-width: 50%;
-  text-align: center;
+.form {
+  height: 100vh;
+  background: linear-gradient(135deg,black);
+  display: flex;            
+  justify-content: center;  
+  align-items: center;
   /* border: 2px solid yellow; */
 }
-.formulario-login-input {
+.formulario-field {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem; 
+  width: 50%;
+  height: auto;
+  /* border: 2px solid yellow; */
 }
-.formulario-login-input input {
-  padding: 14px;
-  font-size: 16px;
-  border: 2px solid #691b1b;
-  border-radius: 8px;
-  outline: none;
-  transition: .3s;
+.formulario-legend {
+  color: aquamarine;
+  font-size: 2.5rem;
 }
-.formulario-login-input a {
-  font-size: 1.6rem; 
+.formulario-label {
+  color: aquamarine;
+  font-size: 1.8rem;
 }
-input:focus {
+.formulario-input {
+  font-size: 1.8rem;
+}
+.formulario-input:focus {
   border-color: #667eea;
   box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.2);
 }
-button {
-  padding: 14px;
-  font-size: 18px;
-  background: #667eea;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-  margin-top: 10px;
-}
-button:hover {
-  background: #5a67d8;
-}
-.formulario_cadastre-se{
-  margin-top: 5rem;
-  outline: 2px solid yellow;
-}
 .formulario-nav {
-  margin-top: 3%;
-  /* border: 2px solid yellow; */
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  /* border: 2px solid yellow;     */
 }
-.formulario-nav a {
-  font-size:1.6rem;
-  text-transform: initial;
-  /* border: 2px solid yellow; */
+.formulario-submit {
+  font-size: 1.8rem;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--botao);  
+}
+.formulario-div {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  color: white;
+  /* border: 2px solid rgb(213, 213, 124);  */
+}
+.formulario-div p {  
+  font-size: 1.5rem;
+  padding-right: 5px;
+}
+.formulario-div a {
+  text-decoration: none;
+  color: white; 
+  font-size: 1.5rem;
 }

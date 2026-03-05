@@ -8,23 +8,25 @@
 </head>
 
 <body>
-  <section class="formulario-login">
-    <h1>Login</h1>
+  <form action="" method="post" autocomplete="off" class="form">
+    <fieldset class="formulario-field">
+      <legend class="formulario-legend">Login</legend>
 
-    <form class="formulario-login-input">
-      <input type="text" id="usuario" placeholder="Usuário" required>
-      <input type="password" id="senha" placeholder="Senha" required>
-      <a class="formulario_link" href="cadastro.html">Esqueci minha senha</a>
-      <button type="submit">Entrar</button>
-    </form>
+      <label class="formulario-label" for="usuario">Usuario</label>
+      <input class="formulario-input" type="text" name="usuario" id="usuario" required>
 
-    <nav class="formulario-nav">      
-      <div class="formulario-div">
-        <a href="cadastro.html">Cadastre-se</a>
-      </div> 
+      <label class="formulario-label" for="senha">Senha</label>
+      <input class="formulario-input" type="password" name="senha" id="password" required>
 
-    </nav>  
-  </section>
+      <nav class="formulario-nav">
+        <button class="formulario-submit" type="submit">Entrar</button>
+        <div class="formulario-div">
+          <a class="jaPossuiCadastro-login" href="cadastro.html">Quero me cadastrar</a>
+          <a class="jaPossuiCadastro-login" href="recupera.html">Esqueçi a senha</a>
+        </div>
+      </nav>      
+    </fieldset>
+  </form>
 
   <script src="script.js"></script>
 </body>
