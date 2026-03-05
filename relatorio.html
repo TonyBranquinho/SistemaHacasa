@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatorio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="relatorioForm" action="/upload" enctype="multipart/form-data" method="post" autocomplete="off" class="form">
+        <fieldset class="formulario-field">
+            <legend class="formulario-legend">Relatório</legend>
+
+            <label class="formulario-label" for="Matrícula">Matrícula</label>
+            <input class="formulario-input" type="text" name="Matrícula" id="matricula" required>
+
+            <label class="formulario-label" for="descricao">Descricão</label>
+            <textarea class="textArea" name="descricao" id="descricao" required></textarea>
+
+            <label class="formulario-label" for="imagens">Imagens</label>
+            <input type="file" name="fotos" accept="image/*" multiple>
+
+            <nav class="formulario-nav">
+                <button class="formulario-submit" type="submit">Enviar</button>
+                <div class="formulario-div">
+                    <p></p>
+                    <a class="jaPossuiCadastro-login" href="index.html">Voltar para login</a>
+                </div>
+            </nav>
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+    
+</body>
+</html>
