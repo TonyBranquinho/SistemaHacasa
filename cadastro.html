@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form action="" method="post" autocomplete="off" class="form">
+    <form id="cadastroForm"  action="" method="post" autocomplete="off" class="form">
         <fieldset class="formulario-field">
             <legend class="formulario-legend">Cadastre-se</legend>
 
@@ -20,10 +20,10 @@
             <input class="formulario-input" type="email" name="email" id="email" required>
 
             <label class="formulario-label" for="senha">Senha</label>
-            <input class="formulario-input" type="password" name="senha" id="password" required>
+            <input class="formulario-input" type="password" name="senha" id="senha" required>
 
             <nav class="formulario-nav">
-                <button class="formulario-submit" type="submit">Entrar</button>
+                <button class="formulario-submit" type="submit">Cadastrar</button>
                 <div class="formulario-div">
                     <p></p>
                     <a class="jaPossuiCadastro-login" href="index.html">Ja possui cadastro?</a>
@@ -31,5 +31,7 @@
             </nav>
         </fieldset>
     </form>
+    
+    <script src="script.js"></script>
 </body>
 </html>
